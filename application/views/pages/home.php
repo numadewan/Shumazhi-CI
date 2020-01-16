@@ -16,7 +16,7 @@
 				<div class="row">
 
 	<!-- If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php". -->
-					<form class="col s12" action="/action_page.php" style="padding: 50px;">
+					<form class="col s12" action="./data_test.php" method="get"style="padding: 50px;">
 						<div class="row">
 							<div class="input-field col s6">
 							<input placeholder="First Name" id="first_name" type="text" class="validate">
@@ -51,6 +51,7 @@
 							<input id="icon_telephone" type="tel" class="validate">
 							<label for="icon_telephone">Phone</label>
 						</div>
+						<Button type="submit" class="btn">Register</Button>
 					</form>
 					
 					<select id="country" name="country">a</select>
