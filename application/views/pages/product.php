@@ -13,7 +13,7 @@
 	</div>
 	<div class="row">
 		<div class="col s12 ">
-      <div class="card #dcedc8 light-green lighten-4" >
+      <div class="card hoverable" >
         <div class="card-content dark-text">
           <span class="card-title">Card Title</span>
           <p>I am a very simple card. I am good at containing small bits of information.</p>

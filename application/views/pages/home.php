@@ -14,7 +14,7 @@
 			
 				<div class="col s6"  style="padding: 10px;">
 					<div class="container">
-					<div class="row" style="margin-top: 50px;"><h3>Title<h3></div>
+					<div class="row" style="margin-top: 50px;"><h3>Shumazhi<h3></div>
 					<p>
 					Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
 					commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
