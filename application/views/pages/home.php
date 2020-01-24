@@ -1,5 +1,14 @@
 	<!-- Main Page -->
-		<div class="container">
+	<div class="container">
+	<!-- Status message -->
+    <?php  
+        if(!empty($success_msg)){ 
+            echo '<p class="status-msg success">'.$success_msg.'</p>'; 
+        }elseif(!empty($error_msg)){ 
+            echo '<p class="status-msg error">'.$error_msg.'</p>'; 
+        } 
+    ?>
+		
 			
 			<div class="row" style=" height:50px; padding: 50px; margin-top:100px;">
 			
@@ -16,13 +25,13 @@
 				<div class="row">
 
 	<!-- If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php". -->
-					<form class="col s12" action="./data_test.php" method="get"style="padding: 50px;">
+					<form class="col s12" action="<?php echo base_url(); ?>user/register" method="post" style="padding: 50px;">
 						<div class="row">
 							<div class="input-field col s6">
-							<input placeholder="First Name" id="first_name" type="text" class="validate">
+							<input placeholder="First Name" name="first_name" type="text" class="validate">
 							</div>
 							<div class="input-field col s6">
-							<input id="last_name"  placeholder="Last Name"type="text" class="validate">
+							<input name="last_name"  placeholder="Last Name" type="text" class="validate">
 							</div>
 						</div>
 
@@ -30,31 +39,31 @@
 						<div class="row">
 
 							<div class="input-field col s12">
-								<input placeholder="Company Name" id="first_name" type="text" class="validate">
+								<input placeholder="Company Name" name="company_name" type="text" class="validate">
 							</div>
 
 							<div class="input-field col s12">
-								<input id="email" type="email" class="validate">
+								<input name="email" type="email" class="validate">
 								<label for="email">Email</label>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="input-field col s12">
-								<input id="password" type="password" class="validate">
+								<input name="password" type="password" class="validate">
 								<label for="password">Password</label>
 							</div>
 							
 						</div>
 						<div class="input-field col s12">
 							<i class="material-icons prefix">phone</i>
-							<input id="icon_telephone" type="tel" class="validate">
+							<input name="phone" type="tel" class="validate">
 							<label for="icon_telephone">Phone</label>
 						</div>
-						<Button type="submit" class="btn">Register</Button>
+						<input class = "btn btn-success" name="register" type="submit" class="btn btn-register" value="Register" />
 					</form>
 					
-					<select id="country" name="country">a</select>
+					<select name="country" name="country">a</select>
 
 				</div>
 			</div>
