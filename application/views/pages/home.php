@@ -51,7 +51,7 @@
 							<input id="icon_telephone" type="tel" class="validate">
 							<label for="icon_telephone">Phone</label>
 						</div>
-						<Button type="submit" class="btn">Register</Button>
+						<Button type="submit" style={} class="btn">Register</Button>
 					</form>
 					
 					<select id="country" name="country">a</select>
