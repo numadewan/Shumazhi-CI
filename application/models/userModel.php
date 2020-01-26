@@ -6,7 +6,6 @@ class userModel extends CI_Model{
     } 
     
     public function register_user($data){      
-<<<<<<< HEAD
         return $this->db->insert('user', $data);   
     }
 
@@ -16,10 +15,6 @@ class userModel extends CI_Model{
         $this->db->where('password', $password);
         $query = $this->db->get('user');
         return $query->num_rows();
-=======
-         $this->db->insert('user', $data);
-        
->>>>>>> 1446bb4bea392b0409eca587309c98d46cc91d75
     }
 }
 
